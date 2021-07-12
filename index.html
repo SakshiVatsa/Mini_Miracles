@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now | Orphanage Donation</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="logo">
+           <img src ="images/logo.jpeg">
+           <a href="#">Mini Miracles</a>
+          </div>
+    
+        <div class="topnav" onclick="toggleMenu();"> </div>
+        <ul class="navbar">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#socials" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+
+    </header>
+
+
+    <section id="home" class="donate-banner">
+        <div class="donate-text">
+            <h2>Let's <br> <span>Donate.</span></h2>
+            <h3>To Make A Difference </h3>
+            <a href="payment.html" class="btn"><span>Donate</span></a>
+
+            <script>
+                const btn = document.querySelector('.btn');
+                btn.onmousemove = function (e) {
+                    const x = e.pageX - btn.offsetLeft;
+                    const y = e.pageY - btn.offsetTop;
+
+                    btn.style.setProperty('--x', x + 'px');
+                    btn.style.setProperty('--y', y + 'px');
+                }
+            </script>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="heading">
+            <h2>About</h2>
+        </div>
+
+        <div class="content">
+            <div class="content-box con1">
+                
+                <h3>Bloom a Smile </h3>
+                <p>“It takes a village to raise a child”
+                    - African Proverb
+                    <br><br>
+                    Mini Miracles is steadily growing to cover the whole nation. We work hard to ensure that no child sleeps without a roof above their head or a warm embrace to provide comfort and security.
+                    The organization has also taken the initiative to start educating these children for a better future.
+                    But we can’t possibly do this without you. Your tiniest support can go a long way to making their big dreams come true.
+                    <br><br>Let’s Spread Simile Not Tears.<br>Come Cultivate Love Not Fears.
+                    <br>
+                    <br>
+                    We assure you that all your donations will reach these children and be invested in their future.
+                    If a single drop of water can start a ripple effect in the ocean then one penny from your end can also leave a lasting impression on these lives. 
+                    Every Penny Counts. Make Your Contribution for Their Future.
+                    Plenty if you set your heart to it!
+                    Kindly share your charitable donations our way. 
+                </p>
+            </div>
+
+            <div class="con1">
+                <iframe width="350" height="350" src="https://www.youtube.com/embed/ShlHzoEH7eQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.topnav');
+            var navBar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navBar.classList.toggle('active');
+        }
+    </script>
+
+
+
+<div id="socials" class="bottom-container">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+  
+    <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/sakshi-vatsa-967942207/"><i class="fa fa-linkedin icon"></i></a>
+        </li>
+        <li>
+            <a href="https://github.com/SakshiVatsa"><i class="fa fa-github icon"></i> </a>
+        </li>
+        <li>
+            <a href="https://wa.link/jsrjot"><i class="fa fa-whatsapp icon"></i></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/_sakshi_vatsa/"><i class="fa fa-instagram icon"></i></a>
+        </li>
+        <li>
+            <a href="mailto:sakshivatsa7@gmail.com"><i class="fa fa-envelope icon"></i></a>
+        </li>
+        <li>
+            <a href="tel:6202449049"><i class="fa fa-phone icon"></i></a>
+        </li>
+    </ul>
+  </div>
+  
+
+
+</body>
+
+</html>
